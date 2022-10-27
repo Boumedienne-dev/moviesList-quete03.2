@@ -10,7 +10,8 @@ export class MoviesListComponent implements OnInit {
 
   showMovies: boolean = true;
 
- displayGuestList: boolean = true;
+  displayGuestList: boolean = true;
+  moviesList: string[] = ["Dragon Ball Z", "une maison sur l'océan", "Boum le futur dév", "Jamais sans Boum quoi !"]
 
   constructor() { }
 

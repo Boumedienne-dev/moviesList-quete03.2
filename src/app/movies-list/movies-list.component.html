@@ -1,6 +1,17 @@
 
 <h1>{{title}}</h1>
 
+<div *appDisplayGuests="showMovies">
+    <ul>
+        <li *ngFor="let movie of moviesList ;let first = first;">
+            <p *ngIf="first;" appHighlight>{{movie}}</p>
+            <p *ngIf="!first;">{{movie}}</p>
+        </li>
+    </ul>
+</div>
+
+
+
 <ul *appDisplayGuests="displayGuestList">
     <li>film 1</li>
     <li>film 2</li>
